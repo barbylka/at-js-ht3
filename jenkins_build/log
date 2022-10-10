@@ -1,0 +1,62 @@
+Started by user [8mha:////4KIUurmE/ln7pBWC29aJj163FgSimmqJvj0oNsTaH/VDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9xJTczLz4wkQAVGqs/sMAAAA=[0mIrina Stafeeva
+Started by user [8mha:////4KIUurmE/ln7pBWC29aJj163FgSimmqJvj0oNsTaH/VDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9xJTczLz4wkQAVGqs/sMAAAA=[0mIrina Stafeeva
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/postman_test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/postman_test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/barbylka/at-js-ht3.git # timeout=10
+Fetching upstream changes from https://github.com/barbylka/at-js-ht3.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/barbylka/at-js-ht3.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision ca7fc7152493998778146127f85aa41b4a80ee80 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ca7fc7152493998778146127f85aa41b4a80ee80 # timeout=10
+Commit message: "Update README.md"
+ > git rev-list --no-walk ca7fc7152493998778146127f85aa41b4a80ee80 # timeout=10
+[postman_test] $ /bin/sh -xe /tmp/jenkins10409793252923102662.sh
++ newman run DropboxTesting.postman_collection.json --env-var CLIENT_ID=**** --env-var CLIENT_SECRET=**** --env-var REFRESH_TOKEN=****
+newman
+
+DropboxTesting
+
+→ 0. Get access token automatically
+  POST https://api.dropboxapi.com/oauth2/token [200 OK, 681B, 308ms]
+
+→ 1. Upload a file
+  POST https://content.dropboxapi.com/2/files/upload [200 OK, 861B, 795ms]
+  ✓  Check a file is uploaded
+  ✓  Status code is 200
+
+→ 2. Get the file metadata
+  POST https://api.dropboxapi.com/2/files/get_metadata [200 OK, 785B, 190ms]
+  ✓  Status code is 200
+  ✓  File hash from the response is equal to the uploaded one
+
+→ 3. Delete a file
+  POST https://api.dropboxapi.com/2/files/delete_v2 [200 OK, 801B, 1644ms]
+  ✓  Status code is 200
+
+┌─────────────────────────┬─────────────────────┬─────────────────────┐
+│                         │            executed │              failed │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              iterations │                   1 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│                requests │                   4 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│            test-scripts │                   8 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│      prerequest-scripts │                   4 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              assertions │                   5 │                   0 │
+├─────────────────────────┴─────────────────────┴─────────────────────┤
+│ total run duration: 3.2s                                            │
+├─────────────────────────────────────────────────────────────────────┤
+│ total data received: 1.3kB (approx)                                 │
+├─────────────────────────────────────────────────────────────────────┤
+│ average response time: 734ms [min: 190ms, max: 1644ms, s.d.: 572ms] │
+└─────────────────────────────────────────────────────────────────────┘
+Finished: SUCCESS

@@ -1,4 +1,4 @@
-# AT_JS_HT2
+# AT_JS_HT3
 **Testing Dropbox API with Postman PLUS Jenkins file**
 
 This project was created in order to provide functional test automation of 3 scenarios (below) for [Dropbox API](https://www.dropbox.com/developers/documentation/http/documentation).

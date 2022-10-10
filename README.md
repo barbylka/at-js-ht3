@@ -3,6 +3,12 @@
 
 This project was created in order to provide functional test automation of 3 scenarios (below) for [Dropbox API](https://www.dropbox.com/developers/documentation/http/documentation).
 
+### HT Sources
+Here you can find sources which are requested in the task
+
+* GitHub repo: ooops, actually you're already here 🙃
+* Jenkins completed job folder is here too 😉
+* [Postman collection link](https://www.getpostman.com/collections/1090c70eaed21acf3b54). **Note!** There's no secret credentionals, they're assigned as env variables.
 
 ## Scenarios
 
@@ -40,8 +46,6 @@ Scenario:
 
 ## Technology used
 
+- [Jenkins](https://www.jenkins.io/)
 - [POSTMAN](https://www.postman.com/)
-
-
-## Setup and running the test suit
-
+- [NEWMAN](https://www.npmjs.com/package/newman)

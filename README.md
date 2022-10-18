@@ -3,6 +3,17 @@
 
 This project was created in order to provide functional test automation of 3 scenarios (below) for [Dropbox API](https://www.dropbox.com/developers/documentation/http/documentation).
 
+### Screencast
+There's my screencast of adjusting Jenkins for HT3 in ht3-Irina-Stafeeva.zip.
+
+Timecodes:
+00.00 - jenkins installiation
+03.10 - installing plugins
+05.40 - getting started with jenkins
+06.26 - manage jenkins, inststall node+npm. NodeJS installiation, NEWMAN
+08.00 - creating & configurating a job, build env
+13.37 - build now, logs & newman report
+
 ### HT Sources
 Here you can find sources which are requested in the task
 

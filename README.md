@@ -18,7 +18,7 @@ Timecodes:
 Here you can find sources which are requested in the task
 
 * GitHub repo: ooops, actually you're already here 🙃
-* Jenkins completed job folder is here too 😉
+* Jenkins completed job folder is here too as 'jenkins_build' 😉
 * [Postman collection link](https://www.getpostman.com/collections/1090c70eaed21acf3b54). **Note!** There's no secret credentionals, they're assigned as env variables.
 
 ## Scenarios
@@ -54,8 +54,7 @@ Scenario:
 
 *Comments: details of this API request are [here](https://www.dropbox.com/developers/documentation/http/documentation#files-delete)
 
-
-## Technology used
+## Technologies used
 
 - [Jenkins](https://www.jenkins.io/)
 - [POSTMAN](https://www.postman.com/)
